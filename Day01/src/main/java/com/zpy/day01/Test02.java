@@ -8,7 +8,7 @@ public class Test02 {
     public int cuttingRope(int n) {//暴力解题
         int mid = n / 2;
         for (int i = 0; i < mid; i++) {
-            if()
+//            if()
         }
         return 0;
     }
