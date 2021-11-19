@@ -1,4 +1,4 @@
-package com.zpy.Sort;
+package com.zpy.sort;
 
 public class QuickSort {
 }
