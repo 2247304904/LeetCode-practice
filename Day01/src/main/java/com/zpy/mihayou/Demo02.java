@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Demo02 {
 
-    @Test
+
 
     public ArrayList<ArrayList<Integer>> permute(int[] nums) {
 
