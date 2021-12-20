@@ -1,5 +1,7 @@
 package com.zpy.day08;
 
+import java.util.LinkedList;
+
 /**
  * 剑指 Offer II 001. 整数除法
  * https://leetcode-cn.com/problems/xoh6Oh/
@@ -9,31 +11,47 @@ package com.zpy.day08;
  **/
 
 public class Demo01 {
-    public int divide(int a, int b) {
-        int index = 0;
-        int aabs = Math.abs(a);
-        int babs = Math.abs(b);
-        if (aabs >= babs) {
-            while (true) {
-                if (aabs - babs >= 0) {
-                    aabs -= babs;
-                    index++;
-                } else {
-                    break;
-                }
-            }
-        }
-        if (Math.min(a, b) > 0 || (a < 0 && b < 0)) {
 
-        } else {
-            index = 0 - index;
+
+    public int divide(int a, int b) {
+        int flag = 0;
+        if (a > 0) {
+            a = -a;
+            flag += 1;
         }
-        return index;
+
+        if (b > 0) {
+            b = -b;
+            flag += 1;
+        }
+        int ret = calc(a, b);
+        if (flag != 1 && ret == Integer.MIN_VALUE) {
+            ret++;
+        }
+        return flag == 1 ? ret : -ret;
     }
+
+    private int calc(int a, int b) {
+        int ret = 0;
+        while (a <= b) {
+            int cnt = 1;
+            int val = b;
+            while (val >= Integer.MIN_VALUE >> 1 && a <= val << 1) {
+                cnt += cnt;
+                val += val;
+            }
+            ret -= cnt;
+            a -= val;
+        }
+        return ret;
+    }
+
 
     public static void main(String[] args) {
         Demo01 demo01 = new Demo01();
-        int divide = demo01.divide(-2147483648, -1);
+        int divide = demo01.divide(-2147483648, 1);
         System.out.println(divide);
+//        LinkedList<Integer>
+
     }
 }
