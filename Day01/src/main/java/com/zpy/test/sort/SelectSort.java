@@ -1,4 +1,4 @@
-package com.zpy.sort;
+package com.zpy.test.sort;
 
 /**
  * 选择排序

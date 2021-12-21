@@ -1,4 +1,4 @@
-package com.zpy.test01;
+package com.zpy.test.test01;
 
 /**
  * 实现多线程的三种方式

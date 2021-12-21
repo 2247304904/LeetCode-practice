@@ -1,4 +1,4 @@
-package com.zpy.designPattern;
+package com.zpy.test.designPattern;
 
 /**
  * @author 张鹏宇

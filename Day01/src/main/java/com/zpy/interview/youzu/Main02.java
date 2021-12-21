@@ -1,4 +1,4 @@
-package com.zpy.youzu;
+package com.zpy.interview.youzu;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.zpy.practice;
+package com.zpy.interview.practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,10 +1,6 @@
-package com.zpy.mihayou;
+package com.zpy.interview.mihayou;
 
-import org.junit.Test;
-
-import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class Demo02 {

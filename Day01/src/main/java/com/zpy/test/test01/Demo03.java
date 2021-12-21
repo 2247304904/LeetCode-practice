@@ -1,4 +1,4 @@
-package com.zpy.test01;
+package com.zpy.test.test01;
 
 public class Demo03 extends Thread{
     @Override
