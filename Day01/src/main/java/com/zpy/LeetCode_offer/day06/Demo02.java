@@ -1,4 +1,4 @@
-package com.zpy.day06;
+package com.zpy.LeetCode_offer.day06;
 
 /**
  * 剑指 Offer 53 - I. 在排序数组中查找数字 I

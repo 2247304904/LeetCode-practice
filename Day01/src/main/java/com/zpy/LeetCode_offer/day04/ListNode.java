@@ -1,4 +1,4 @@
-package com.zpy.day04;
+package com.zpy.LeetCode_offer.day04;
 
 /**
  * 链表类

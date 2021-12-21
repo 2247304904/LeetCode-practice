@@ -1,4 +1,4 @@
-package com.zpy.day05;
+package com.zpy.LeetCode_offer.day05;
 
 /**
  * 剑指 Offer 05. 替换空格

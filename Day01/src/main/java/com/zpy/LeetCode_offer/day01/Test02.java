@@ -1,4 +1,4 @@
-package com.zpy.day01;
+package com.zpy.LeetCode_offer.day01;
 
 /**
  * 剑指offer 14-I 剪绳子
