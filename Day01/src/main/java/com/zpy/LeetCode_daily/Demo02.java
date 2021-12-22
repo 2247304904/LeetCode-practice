@@ -10,28 +10,55 @@ package com.zpy.LeetCode_daily;
 
 public class Demo02 {
     public int repeatedStringMatch(String a, String b) {
-        int res = 1;
-        while (true) {
-
-            if (a.indexOf(b) != -1) {
-                break;
-            } else {
-                res++;
-                a += a;
+        int res = 0;
+        String temp = "";
+        char[] chars = b.toCharArray();
+//        while (true) {
+//            if(temp.length()>b.length()*2+a.length()){
+//                res = -1;
+//                break;
+//            }else {
+//                if (temp.indexOf(b) != -1) {
+//                    break;
+//                } else {
+//                    temp += a;
+//                    res++;
+//                }
+//            }
+//
+//
+//        }
+        while(true){
+            if (temp.length() >= b.length() && temp.length() <= b.length() * 2 + a.length()){
+                if (temp.indexOf(b) != -1) {
+                    break;
+                } else {
+                    temp += a;
+                    res++;
+                }
+                if (temp.indexOf(b) != -1) {
+                    break;
+                } else {
+                    temp += a;
+                    res++;
+                }
             }
-            if(a.length()>b.length()*3){
+            else{
                 res = -1;
                 break;
+
             }
         }
 
 
-        return res;
+
+            return res;
     }
 
     public static void main(String[] args) {
         Demo02 demo02 = new Demo02();
-        int i = demo02.repeatedStringMatch("abc", "cabcabca");
+        int i = demo02.repeatedStringMatch("aaaaaaaaaaaaaaaaaaaaaab"
+                , "ba");
         System.out.println(i);
     }
 }
