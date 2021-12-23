@@ -32,8 +32,9 @@ public class Demo01 {
     }
 
     public static void main(String[] args) {
-        Demo01 demo01 = new Demo01();
-        int i = demo01.dayOfYear("2000-03-01");
-        System.out.println(i);
+//        Demo01 demo01 = new Demo01();
+//        int i = demo01.dayOfYear("2000-03-01");
+//        System.out.println(i);
+//        System.out.println(0/0);
     }
 }
