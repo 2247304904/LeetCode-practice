@@ -90,3 +90,14 @@ GROUP BY
     gender, university
 
 
+# SQL19 分组过滤练习题
+# https://www.nowcoder.com/practice/ddbcedcd9600403296038ee44a172f2d?tpId=199&tags=&title=&difficulty=0&judgeStatus=0&rp=0
+SELECT
+    university,
+    AVG(question_cnt) as avg_question_cnt,
+    AVG(answer_cnt) as avg_answer_cnt
+from
+    user_profile
+GROUP BY university
+HAVING avg_question_cnt<5
+    or avg_answer_cnt <20
