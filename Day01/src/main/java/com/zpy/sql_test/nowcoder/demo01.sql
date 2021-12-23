@@ -101,3 +101,13 @@ from
 GROUP BY university
 HAVING avg_question_cnt<5
     or avg_answer_cnt <20
+
+
+# SQL20 分组排序练习题
+SELECT
+    university,
+    AVG(question_cnt) as avg_question_cnt
+from
+    user_profile
+GROUP BY university
+ORDER BY avg_question_cnt
