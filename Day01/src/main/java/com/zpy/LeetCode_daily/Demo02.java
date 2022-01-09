@@ -28,8 +28,8 @@ public class Demo02 {
 //
 //
 //        }
-        while(true){
-            if (temp.length() >= b.length() && temp.length() <= b.length() * 2 + a.length()){
+        while (true) {
+            if (temp.length() >= b.length() && temp.length() <= b.length() * 2 + a.length()) {
                 if (temp.indexOf(b) != -1) {
                     break;
                 } else {
@@ -42,8 +42,7 @@ public class Demo02 {
                     temp += a;
                     res++;
                 }
-            }
-            else{
+            } else {
                 res = -1;
                 break;
 
@@ -51,14 +50,12 @@ public class Demo02 {
         }
 
 
-
-            return res;
+        return res;
     }
 
     public static void main(String[] args) {
         Demo02 demo02 = new Demo02();
-        int i = demo02.repeatedStringMatch("aaaaaaaaaaaaaaaaaaaaaab"
-                , "ba");
+        int i = demo02.repeatedStringMatch("aaaaaaaaaaaaaaaaaaaaaab", "ba");
         System.out.println(i);
     }
 }
