@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Main02 {
 
-    public static int GetUglyNumber_Solution(int index){
+    public static int GetUglyNumber_Solution(int index) {
         int count = 0;
         int i;
-        for(i =1;count<=index;i++){
-            if(isUgly(i)){
+        for (i = 1; count <= index; i++) {
+            if (isUgly(i)) {
                 count++;
             }
         }
@@ -16,18 +16,18 @@ public class Main02 {
     }
 
     private static boolean isUgly(int i) {
-        while (i%2==0){
-            i = i/2;
+        while (i % 2 == 0) {
+            i = i / 2;
         }
-        while (i%3==0){
-            i = i/3;
+        while (i % 3 == 0) {
+            i = i / 3;
         }
-        while (i%7==0){
-            i = i/7;
+        while (i % 7 == 0) {
+            i = i / 7;
         }
-        if(i==1){
+        if (i == 1) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
