@@ -1,10 +1,11 @@
 package com.zpy.test.test07;
 
 /**
- * 反转链表
- * 输入 1 2 3 4 5
- * 输出 5 4 3 2 1
- */
+ * @program: LeetCode-practice
+ * @description: 反转链表
+ * @author: 张鹏宇
+ * @create: 2022-04-01 18:20
+ **/
 public class Demo01 {
 
     Node reversal(Node head){
