@@ -1,2 +1,2 @@
 # LeetCode-practice
-每日刷题计划！
+刷题计划！
