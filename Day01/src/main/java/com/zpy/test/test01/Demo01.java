@@ -7,7 +7,7 @@ package com.zpy.test.test01;
  * 3.继承Thread类 重写run方法
  */
 public class Demo01 implements Runnable{
-    @Override
+
     public void run() {
 
     }
