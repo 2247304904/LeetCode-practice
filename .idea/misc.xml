@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Daily" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -8,6 +12,7 @@
       <list>
         <option value="$PROJECT_DIR$/Day01/pom.xml" />
         <option value="$PROJECT_DIR$/learn-java/pom.xml" />
+        <option value="$PROJECT_DIR$/Daily/pom.xml" />
       </list>
     </option>
   </component>
