@@ -10,5 +10,6 @@ package com.zpy.daily;
 public class Demo03 {
     public TreeNode insertIntoMaxTree(TreeNode root, int val) {
 
+        return  null;
     }
 }
