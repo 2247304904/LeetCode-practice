@@ -1,2 +1,3 @@
 # LeetCode-practice
-刷题计划！
+leetcode 每日一题 
+牛客网sql
