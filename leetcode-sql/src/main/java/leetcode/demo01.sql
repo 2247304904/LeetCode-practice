@@ -39,18 +39,30 @@ where referee_id != 2
 union
 select name
 from customer
-where referee_id is null
+where referee_id is null union代替 or
 
-union代替 or
-
-select name from customer
-where id not in (select id from customer where referee_id=2)
+select name
+from customer
+where id not in (select id from customer where referee_id = 2)
 
 --     https://leetcode.cn/problems/customers-who-never-order/?plan=sql&plan_progress=zxbs8ch
 --     183. 从不订购的客户
 select customers.name as 'Customers'
 from customers
 where customers.id not in
-      (
-          select customerid from orders
-      );
+      (select customerid
+       from orders);
+
+
+
+-- 1873. 计算特殊奖金
+-- https://leetcode.cn/problems/calculate-special-bonus/?plan=sql&plan_progress=zxbs8ch
+
+SELECT employee_id, salary AS bonus
+FROM Employees
+WHERE employee_id%2!=0 AND name NOT LIKE ('M%')
+UNION
+SELECT employee_id, salary * 0 AS bonus
+FROM Employees
+WHERE employee_id%2=0 OR name LIKE ('M%')
+ORDER BY employee_id;
